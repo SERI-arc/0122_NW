@@ -2,7 +2,7 @@
 // Axios共通設定
 // ==============================
 axios.defaults.withCredentials = true;
-axios.defaults.baseURL = "m3hserita-backapp.m3harbor.net/api"; // バックエンドのカスタムドメイン
+axios.defaults.baseURL = "m3hserita-backapp.m3harbor.net/api/api"; // バックエンドのカスタムドメイン
 
 // ==============================
 // Vueアプリ設定
