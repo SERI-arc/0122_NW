@@ -125,6 +125,8 @@
 
             loading.value = true;
             try {
+              console.log(userid.value)
+              console.log(password.value)
               const res = await axios.post("/LOGINUSER", {
                 id: userid.value,
                 password: password.value,
@@ -140,7 +142,7 @@
                 showOkButton.value = true;
 
                 // 自動遷移したい場合は以下を有効化
-                // window.location.href = "home.html";
+                 window.location.href = "home.html";
               } else {
                 message.value =
                   "ログインに失敗しました。(Status: " + res.status + ")";
